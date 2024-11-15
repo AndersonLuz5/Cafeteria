@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dolce Coffee</title>
+</head>
+
+<body>
+  <div class="box-video">
+    <video src="./videos/coffe.mp4" loop muted autoplay></video>
+    <div class="mask"></div>
+  </div>
+  <header>
+    <section>
+      <a href="#">
+        <img src="./img/logo.png" alt="logo-coffee">
+      </a>
+      <nav>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#about-us">Sobre</a>
+          <a href="#">Menu</a>
+          <a href="#">Avaliações</a>
+          <a href="#" onclick="mostrarModal()">Endereço</a>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <div>
+    <section class="box-main">
+      <div>
+        <h3>Bem-vindo ao Dolce Coffee!</h3>
+        <p>Desfrute de um momento de sabor e aconchego em cada xícara. Nosso café é feito com paixão e os melhores
+          grãos, para oferecer uma experiência única que vai aquecer o seu dia.</p>
+        <a class="button-link" href="#">Pegue Já O Seu.</a>
+      </div>
+    </section>
+  </div>
+  <section class="box-about">
+    <h2 class="titulo"><span>Sobre</span> Nós.</h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="./img/about-img.jpeg" alt="about-us">
+      </div>
+      <div class="about-txt">
+        <h3>O que faz o nosso café especial</h3>
+        <p>No Dolce Coffee, acreditamos que um bom café vai além do sabor — ele é uma experiência. Cada xícara que
+          servimos é fruto de um processo cuidadoso e apaixonado, que começa na seleção dos grãos e vai até o momento em
+          que você saboreia o seu café.</p>
+        <a class="button-link" href="#">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+  <div class="modal">
+    <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14817.298198611204!2d-49.609432399999996!3d-21.80638775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1731439940248!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="mask-map" onclick="esconderModal()"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
